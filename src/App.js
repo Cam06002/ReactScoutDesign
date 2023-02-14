@@ -1,16 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { Route, Router, BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Layout from './Components/Layout/Layout';
+import Home from './Components/Home';
 
 export default function App() {
-
   return (
       <BrowserRouter>
         <Layout>
-          <Router>
-            <Route/>
-          </Router>
+          <Routes>
+            <Route path='/' element={<Home />}/>
+          </Routes>
         </Layout>
       </BrowserRouter>
   );

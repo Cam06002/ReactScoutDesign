@@ -1,13 +1,13 @@
 import React, { Children } from "react";
 import NavBar from "./NavBar";
-import PageContainer from "./PageContainer";
+import { Container } from "react-bootstrap";
 
-export default function Layout(){
+export default function Layout({Children}){
     return (
         <NavBar>
-            <PageContainer>
+            <Container>
                 {Children}
-            </PageContainer>
+            </Container>
         </NavBar>
     );
 }
