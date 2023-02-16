@@ -1,16 +1,17 @@
 import './App.css';
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home';
+import NavBar from './Components/Layout/NavBar';
 
 export default function App() {
   return (
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path='/' element={<Home />}/>
-          </Routes>
-        </Layout>
-      </BrowserRouter>
+    <div className='App'>
+          <NavBar />
+            <Routes>
+              <Route path='/' element={<Home />}/>
+            </Routes>
+
+    </div>
   );
 }
