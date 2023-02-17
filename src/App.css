@@ -3,7 +3,28 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 20vmin;
+  border-radius: 100px;
+  transition: scale(0.5);
+}
+
+@keyframes shrink-logo {
+  50% {
+    transform: scale(1, .025);
+  }
+  0% {
+    transform: scale(0, .025);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference){
+  .App-logo{
+    animation: shrink-logo 1s 1;
+  }
+}
+
+.App-logo-transition {
+  height: 10vimin;
   border-radius: 50px;
 }
 
