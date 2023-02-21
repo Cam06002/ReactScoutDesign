@@ -1,36 +1,18 @@
 .App {
-  text-align: center;
+  max-width: 100vw;
 }
 
 .App-logo {
   height: 20vmin;
   border-radius: 100px;
-  transition: scale(0.5);
-}
-
-@keyframes shrink-logo {
-  50% {
-    transform: scale(1, .025);
-  }
-  0% {
-    transform: scale(0, .025);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference){
-  .App-logo{
-    animation: shrink-logo 1s 1;
-  }
-}
-
-.App-logo-transition {
-  height: 10vimin;
-  border-radius: 50px;
+  box-shadow: 5px 8px 20px rgb(16, 16, 70);
+  position: absolute;
+  align-items: start;
+  left: 1rem;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,43 +21,30 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .nav-header {
   display: flex;
-  padding: 1rem;
-  background-color: black;
+  background-color: white;
   color: white;
+  text-shadow: 5px 5px 5px #282c34;
   justify-content: space-around;
   align-content: center;
-  box-shadow: 0px 1px 8px blue;
+  padding: 1rem
 }
 
 body{
-
-  background-color: rgb(4, 4, 42);
-  color: white;
-  height: 100vh;
-  width: 100%;
+  background-color: rgb(255, 255, 255);
+  max-width: 100vw;
 }
 
 .nav-button{
-  margin: .25rem;
+  margin: 5vh 0vw 1vh 0vw;
   border-radius: 5px;
   font-size: medium;
-  color: white;
-  background-color: black;
+  color: black;
+  text-shadow: 1px 1px 5px #898989;
+  background-color: white;
   border: 0px;
 }
 
@@ -84,24 +53,37 @@ body{
   align-content: center;
 }
 
-.home-top-button{
-  margin: .25rem;
-  border-radius: 5px;
-  font-size: medium;
-  color: white;
-  background-color: rgb(4, 4, 42);
-  border: 0px;
-  box-shadow: 0px 2px 5px blue;
-  padding: 3px;
-  height: max-content;
-}
-
 .div-section-25 {
-  display: flex;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 25vh;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem;
+}
+
+.div-section-dark {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 12vh;
+  background-color: rgb(39, 39, 141);
+}
+
+.light-box{
+  padding: 10px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  box-shadow: 0px 2px 5px blue;;
+  text-align: start !important;
 }
+
+.blue-text{
+  color: rgb(39, 39, 141);
+}
+
+p {
+  font-size: small;
+}
+
