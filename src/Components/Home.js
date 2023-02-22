@@ -5,9 +5,6 @@ export default function Home(){
 
     return(
         <>
-            <div className="div-section-dark">
-
-            </div>
             <div className="div-section-25">
                 <div className="light-box">
                     <h2 className="blue-text">Small Business Specialists</h2>
