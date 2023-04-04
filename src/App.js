@@ -15,7 +15,7 @@ export default function App() {
             <Routes>
               <Route exact path='/' element={<Home />}/>
               <Route path='/Home' element={<Home />}/>
-              <Route path='/Portfolio' element={<Portfolio />}/>
+              <Route path='/Portfolio/*' element={<Portfolio />}/>
               <Route path='/GradeBook' element={<GradeBook/>}/>
             </Routes>
 

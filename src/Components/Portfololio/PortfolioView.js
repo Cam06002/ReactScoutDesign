@@ -1,15 +1,17 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import {Admin, Resource, ListGuesser} from "react-admin";
+import jsonServerProvider from "ra-data-json-server";
 
 export default function PortfolioView({
-    testText
+    dataProvider,
+    userList
 }){
     return(
-        <Link to="/GradeBook">
-            <Card>
-                {testText}
-            </Card>
-        </Link>
+        <Admin dataProvider={dataProvider}>
+            <Resource name="portfolio" list={userList} />
+        </Admin>
     )
+
 }
